@@ -105,23 +105,27 @@ st.markdown(
             border-radius: 7px;
         }
 
-        .stButton > button {
-            width: 100%;
-            min-height: 3.05rem;
-            border-radius: 7px;
-            border: 0;
-            background: linear-gradient(135deg, #0f766e 0%, #2563eb 100%);
-            color: white;
-            font-weight: 800;
-            letter-spacing: 0;
-            box-shadow: 0 14px 28px rgba(37, 99, 235, 0.22);
-        }
+       
+.stButton > button {
+    width: 100%;
+    min-height: 3.05rem;
+    border-radius: 7px;
+    border: 0 !important;
+    background: linear-gradient(135deg, #0f766e 0%, #2563eb 100%) !important;
+    color: white !important;
+    font-weight: 800;
+    letter-spacing: 0;
+    box-shadow: 0 14px 28px rgba(37, 99, 235, 0.22) !important;
+}
 
-        .stButton > button:hover {
-            border: 0;
-            color: white;
-            filter: brightness(1.03);
-        }
+.stButton > button:hover,
+.stButton > button:focus,
+.stButton > button:active {
+    border: 0 !important;
+    background: linear-gradient(135deg, #0f766e 0%, #2563eb 100%) !important;
+    color: white !important;
+    filter: brightness(1.06);
+}
 
         .result-card {
             background: #ffffff;
